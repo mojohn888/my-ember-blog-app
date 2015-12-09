@@ -1,0 +1,10 @@
+<h2>About Dracula</h2>
+
+<p>Count Dracula is the title character, the main antagonist of Bram Stoker's 1897 Gothic horror novel Dracula and a savior to the protagonist in the short story Dracula's Guest. He is considered thus to be both the prototypical and the archetypical vampire in subsequent works of fiction yet is also depicted in the novel to be the origin of werewolf legends.[12] Some aspects of the character are believed to have been inspired by the 15th-century Romanian general and Wallachian Prince Vlad III the Impaler, who was also known as Dracula. Other character aspects have been added or altered in subsequent popular media fictional works. The character has subsequently appeared frequently in popular culture, from films to animated media to breakfast cereals.</p>
+
+{{#if showDracula}}
+  <p><img src="{{dracula}}"></p>
+  <button {{action 'imageHide'}} class="btn btn-primary">Hide that Scary Monster!</button>
+  {{else}}
+  <button {{action 'imageShow'}} class="btn btn-primary">Show Dracula Image</button>
+{{/if}}

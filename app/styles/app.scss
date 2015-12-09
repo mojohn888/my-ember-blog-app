@@ -1,0 +1,19 @@
+@import 'bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+@import 'app/styles/blogvariable';
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+
+}
+
+.navbar-nav {
+    float: right;
+    margin: 0;
+}
+
+.muted {
+	opacity: 0.5;
+}
