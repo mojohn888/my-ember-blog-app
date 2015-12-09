@@ -1,0 +1,30 @@
+<div class="col-md-3">
+  <div class="row">
+      <h2>Dracula Blog</h2>
+
+      <ul>
+        {{#each model as |post|}}
+        <li>
+
+          <h4>
+            {{#link-to "blog.post" post}}
+            {{post.title}}
+            {{/link-to}}
+          </h4>
+
+          <span class="muted">
+            date: {{post.date}}<br>
+            author: {{post.author}}
+        </span>
+        </li>
+        {{/each}}
+      </ul>
+
+  </div>
+</div>
+
+<div class="col-md-9">
+  <div class="row">
+    {{outlet}}
+  </div>
+</div>
