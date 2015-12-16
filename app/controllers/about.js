@@ -1,3 +1,5 @@
+import Ember from 'ember';
+
 export default Ember.Controller.extend({
   showDracula: false,
   dracula: '/assets/images/Dracula.jpg',

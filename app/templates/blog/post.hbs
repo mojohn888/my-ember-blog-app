@@ -2,7 +2,16 @@
 
     <p><span class="muted">
       date: {{model.date}}<br>
-      author: {{model.author}}
+      author: {{model.author.name}}
   </span></p>
 
-  <p>{{model.body}}</p>
+  <div class="body">
+      <p>{{model.body}}</p>
+  </div>
+
+  {{#if isEditing}}
+      {{partial "blog/post/edit"}}
+      <button class="btn btn-success" {{action "doneEditing"}}>Done</button>
+  {{else}}
+      <button class="btn btn-primary" {{action "edit"}}>Edit</button>
+  {{/if}}

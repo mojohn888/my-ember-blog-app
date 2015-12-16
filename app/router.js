@@ -9,7 +9,7 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('blog', function() {
-    this.route('post', {path: '/post/:title'});
+    this.route('post', {path: '/post/:post_id'});
   });
 });
 
