@@ -1,12 +1,12 @@
 <h2>{{model.title}}</h2>
 
     <p><span class="muted">
-      date: {{model.date}}<br>
+      date: {{format-date model.date}}<br>
       author: {{model.author.name}}
   </span></p>
 
   <div class="body">
-      <p>{{model.body}}</p>
+      <p>{{format-markdown model.body}}</p>
   </div>
 
   {{#if isEditing}}

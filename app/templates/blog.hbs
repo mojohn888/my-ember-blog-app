@@ -13,13 +13,13 @@
           </h4>
 
           <span class="muted">
-            date: {{post.date}}<br>
+            date: {{format-date post.date}}<br>
             author: {{post.author.name}}
         </span>
         </li>
         {{/each}}
       </ul>
-
+        <p>{{#link-to 'blog.add-new'}}<button class="btn btn-primary"> Add new post </button>{{/link-to}}</p>
   </div>
 </div>
 
